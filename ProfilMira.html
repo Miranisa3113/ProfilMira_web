@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Miratun Nisa'</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #fffaf0;
+            color: #333333;
+        }
+
+        header {
+            background-color: #e8b923;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin: 5px 0 0;
+        }
+
+        nav {
+            background-color: #fffdf7;
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #eadfbe;
+        }
+
+        nav a {
+            color: #a47700;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 25px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(120, 95, 20, 0.10);
+        }
+
+        h2 {
+            color: #b18400;
+            border-bottom: 2px solid #e8c94b;
+            padding-bottom: 5px;
+        }
+
+        .profile {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .profile img {
+            width: 160px;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #ead27a;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ded3ad;
+            padding: 10px;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: #d6aa19;
+            color: white;
+            white-space: nowrap;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fff9e5;
+        }
+
+        .links a {
+            display: inline-block;
+            margin-right: 15px;
+            color: #a47700;
+            font-weight: bold;
+        }
+
+        form {
+            max-width: 600px;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #d8c98e;
+            border-radius: 5px;
+            font-family: inherit;
+            background-color: #fffdf7;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #e0b82e;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #e0b52d;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #bd920f;
+        }
+
+        footer {
+            background-color: #4a4432;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 800px) {
+
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                display: block;
+                margin: 5px;
+            }
+
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Miratun Nisa'</h1>
+        <p>Mahasiswa SoftWare Engineering</p>
+    </header>
+
+    <nav>
+        <a href="#tentang">Tentang</a>
+        <a href="#hobi">Hobi</a>
+        <a href="#jadwal">Jadwal</a>
+        <a href="#tautan">Tautan</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <main>
+
+        <!-- Tentang Saya -->
+        <section id="tentang">
+
+            <h2>Tentang Saya</h2>
+
+            <div class="profile">
+
+                <!-- Simpan foto dengan nama foto-mira.jpg
+                     di folder yang sama dengan file HTML -->
+
+                <img
+                    src="foto-mira.jpg"
+                    alt="Foto profil Miratun Nisa'"
+                >
+
+                <div>
+
+                    <p>
+                        Halo! Saya <strong>Miratun Nisa'</strong>,
+                        mahasiswa Software Engineering di Telkom University.
+                    </p>
+
+                    <p>
+                        Saya tertarik pada pengembangan perangkat lunak,
+                        pembuatan website, dan teknologi. Saya juga senang
+                        mempelajari hal-hal baru yang berkaitan dengan dunia teknologi.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Hobi -->
+        <section id="hobi">
+
+            <h2>Hobi Saya</h2>
+
+            <p>
+                Beberapa kegiatan yang saya sukai di waktu luang:
+            </p>
+
+            <ul>
+                <li>Mendengarkan musik</li>
+                <li>Menonton drama</li>
+                <li>Membuat dan mencoba website</li>
+                <li>Belajar teknologi baru</li>
+            </ul>
+
+        </section>
+
+
+        <!-- Jadwal Kuliah -->
+        <section id="jadwal">
+
+            <h2>Jadwal Kuliah</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Hari</th>
+                        <th>Jam</th>
+                        <th>Ruangan</th>
+                        <th>Kode Mata Kuliah</th>
+                        <th>Mata Kuliah</th>
+                        <th>Kode Dosen</th>
+                        <th>Kelas</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>JUMAT</td>
+                        <td>09:30:00</td>
+                        <td>KTT1.08</td>
+                        <td>UBKXACB2</td>
+                        <td>KEWARGANEGARAAN</td>
+                        <td>MSC</td>
+                        <td>SSISE-06-REG-01</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td rowspan="3">SENIN</td>
+                        <td>15:30:00</td>
+                        <td>SWENG LAB</td>
+                        <td>CCKCDAB3</td>
+                        <td>PERANCANGAN DAN PEMROGRAMAN WEB</td>
+                        <td>AJS</td>
+                        <td>SSISE-07-REG-02</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>07:30:00</td>
+                        <td>CPROG LAB</td>
+                        <td>CCK3FAB3</td>
+                        <td>PENJAMINAN MUTU PERANGKAT LUNAK</td>
+                        <td>NIE</td>
+                        <td>SSISE-07-REG-02</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>10:30:00</td>
+                        <td>KTT1.17</td>
+                        <td>CCK3BAB3</td>
+                        <td>MANAJEMEN PROYEK</td>
+                        <td>PDM</td>
+                        <td>SSISE-07-REG-02</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td rowspan="3">KAMIS</td>
+                        <td>15:30:00</td>
+                        <td>KTT1.20</td>
+                        <td>CCK4AAB2</td>
+                        <td>TEKNOLOGI PERANGKAT LUNAK UNTUK MASYARAKAT</td>
+                        <td>DAN</td>
+                        <td>SSISE-06-REG-01</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>07:30:00</td>
+                        <td>KTT1.17</td>
+                        <td>CCK3CAB3</td>
+                        <td>PENGALAMAN PENGGUNA (UX)</td>
+                        <td>AJS</td>
+                        <td>SSISE-07-REG-02</td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>12:30:00</td>
+                        <td>KTT1.09</td>
+                        <td>CCK3AAB3</td>
+                        <td>PEMROGRAMAN PERANGKAT BERGERAK</td>
+                        <td>PDM</td>
+                        <td>SSISE-07-REG-02</td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td rowspan="2">SELASA</td>
+                        <td>10:30:00</td>
+                        <td>CPROG LAB</td>
+                        <td>CCK3AAB3</td>
+                        <td>PEMROGRAMAN PERANGKAT BERGERAK</td>
+                        <td>PDM</td>
+                        <td>SSISE-07-REG-02</td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td>14:30:00</td>
+                        <td>KTT1.17</td>
+                        <td>CCKCDAB3</td>
+                        <td>PERANCANGAN DAN PEMROGRAMAN WEB</td>
+                        <td>AJS</td>
+                        <td>SSISE-07-REG-02</td>
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td rowspan="2">RABU</td>
+                        <td>08:30:00</td>
+                        <td>KTT1.16</td>
+                        <td>CCK3EAB2</td>
+                        <td>WAWASAN GLOBAL TIK</td>
+                        <td>AJS</td>
+                        <td>SSISE-07-GAB-01</td>
+                    </tr>
+
+                    <tr>
+                        <td>11</td>
+                        <td>15:30:00</td>
+                        <td>KTT A-1.06</td>
+                        <td>UCKXBD82</td>
+                        <td>KEWIRAUSAHAAN</td>
+                        <td>AFC</td>
+                        <td>SSISE-07-REG-02</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <!-- TAMBAHAN 1: Tombol JavaScript -->
+            <button type="button" id="toggleJadwal">
+                Sembunyikan Jadwal
+            </button>
+
+            <!-- TAMBAHAN 3: Tombol jQuery -->
+            <button type="button" id="jqueryJadwal">
+                Efek jQuery
+            </button>
+
+        </section>
+
+
+        <!-- Tautan Profil -->
+        <section id="tautan">
+
+            <h2>Tautan Profil</h2>
+
+            <p>
+                Kunjungi tautan berikut untuk melihat profil dan proyek saya.
+            </p>
+
+            <div class="links">
+
+                <a
+                    href="https://github.com/Miranisa3113"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/miratun-nisa-9907a732b?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Kontak -->
+        <section id="kontak">
+
+            <h2>Kontak Saya</h2>
+
+            <form action="#" method="post">
+
+                <label for="nama">Nama</label>
+
+                <input
+                    type="text"
+                    id="nama"
+                    name="nama"
+                    placeholder="Masukkan nama"
+                    required
+                >
+
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Masukkan email"
+                    required
+                >
+
+                <label for="pesan">Pesan</label>
+
+                <textarea
+                    id="pesan"
+                    name="pesan"
+                    placeholder="Tulis pesan..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Kirim
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; 2026 Miratun Nisa'. Semua hak dilindungi.
+        </p>
+
+    </footer>
+
+
+    <!-- jQuery dari CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        // 1. JavaScript: tombol menampilkan dan menyembunyikan tabel jadwal
+
+        const tombolJadwal = document.getElementById("toggleJadwal");
+        const tabelJadwal = document.querySelector("#jadwal table");
+
+        tombolJadwal.addEventListener("click", function () {
+
+            if (tabelJadwal.style.display === "none") {
+
+                tabelJadwal.style.display = "table";
+                tombolJadwal.textContent = "Sembunyikan Jadwal";
+
+            } else {
+
+                tabelJadwal.style.display = "none";
+                tombolJadwal.textContent = "Tampilkan Jadwal";
+
+            }
+
+        });
+
+
+        // 2. JavaScript: validasi form
+
+        const formKontak = document.querySelector("#kontak form");
+
+        formKontak.addEventListener("submit", function (event) {
+
+            const nama = document.getElementById("nama").value.trim();
+            const email = document.getElementById("email").value.trim();
+
+            if (nama === "" || email === "") {
+
+                event.preventDefault();
+
+                alert("Nama dan email wajib diisi.");
+
+            }
+
+        });
+
+
+        // 3. jQuery: efek fade pada tabel jadwal
+
+        $("#jqueryJadwal").click(function () {
+
+            $("#jadwal table").fadeToggle(600);
+
+        });
+
+    </script>
+
+</body>
+
+</html>
